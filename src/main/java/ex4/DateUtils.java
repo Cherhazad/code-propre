@@ -10,6 +10,5 @@ public class DateUtils {
 		String pattern = "dd/MM/yyyy HH:mm:ss";
 		SimpleDateFormat formateur = new SimpleDateFormat(pattern);
 		return formateur.format(date);
-	}
-		
+	}	
 }
