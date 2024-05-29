@@ -3,27 +3,24 @@ import java.util.List;
 
 public class SavaneAfricaine {
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
+	private List<Animal> animaux;
+
 	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
+	public void addAnimal(Animal animal) {
+		animaux.add(animal);
 	}
 	
 	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
+		for (Animal animal: animaux){
+			System.out.println(animal);
 		}
 	}
 	
 	public int compterAnimaux(){
-		return noms.size();
+		return animaux.size();
 	}
 	
 	public int calculerKgsNourritureParJour(){
-		return noms.size() * 10;
+		return animaux.size() * 10;
 	}
 }
